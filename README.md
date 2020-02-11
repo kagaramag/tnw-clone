@@ -1,8 +1,8 @@
-# tnw-clone<!-- @format -->
+# TNW Clone
 
-# Design TNW
+## Design TNW Web
 
-> 
+> A tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced
 
 ![screenshot](images/screenshot.png)
 
@@ -20,9 +20,9 @@ Additional description about the project and its features.
 
 👤 **Aulbourn Knowles**
 
-- Github: [@githubhandle](https://github.com/aulbytj)
-- Twitter: [@twitterhandle](https://twitter.com/aulbytj)
-- Linkedin: [linkedin](https://linkedin.com/in/aulbourn-knowles-b9971672)
+- Github: [@aulbytj](https://github.com/aulbytj)
+- Twitter: [@aulbytj](https://twitter.com/aulbytj)
+- Linkedin: [aulbourn-knowles](https://linkedin.com/in/aulbourn-knowles-b9971672)
 
 👤 **Gilles Kagarama**
 
