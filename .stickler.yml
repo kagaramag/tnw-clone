@@ -1,3 +1,5 @@
+# @format
+
 # add the linters you want stickler to use for this project
 linters:
   stylelint:
