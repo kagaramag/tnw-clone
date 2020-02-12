@@ -1,12 +1,18 @@
 /** @format */
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #181a1b;
   color: #fff;
 }
 
 footer {
-  background-color: #121314;
+  width: 100%;
 }
 
 p,
@@ -14,6 +20,10 @@ h3,
 ul {
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  display: none;
 }
 
 small {
@@ -30,30 +40,54 @@ small {
   color: #bab5ab;
 }
 
-.w7 {
-  font-weight: 700;
-  font-size: 100%;
+.cl-white {
+  color: #fff;
 }
 
 .bg-cocoa-brown {
   background-color: #221919;
 }
 
+.bg-woodsmoke {
+  background-color: #121314;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-shark {
+  background: #303336;
+}
+
+.w7 {
+  font-weight: 700;
+  font-size: 100%;
+}
+
 .wrapper {
   display: flex;
-  max-width: 1176px;
-  margin: 0 auto 40px auto;
+  max-width: 1152px;
+  padding: 0 20px;
   flex-flow: row wrap;
+  margin: 0 auto;
 }
+
+.wrapper-content {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  margin: -1% -1% 40px;
+}
+
 
 .article-col {
   display: flex;
   flex-direction: column;
-  padding: 12px;
+  padding: 1%;
   margin-bottom: 24px;
   height: 685.3px;
-  width: 368px;
-  flex-basis: 368px;
+  width: 30%;
 }
 
 .article-img-text ul li:nth-of-type(1) {
@@ -89,8 +123,8 @@ small {
 }
 
 .article-col span {
-  background: url(images/icons8-expand-arrow-30.png);
-  background-image: url(images/icons8-expand-arrow-30.png);
+  background: url(images/icons8-expand-arrow-26.png);
+  background-image: url(images/icons8-expand-arrow-26.png);
   height: 16px;
   background-repeat: no-repeat;
   width: 16px;
@@ -107,7 +141,7 @@ small {
   justify-content: flex-end;
   background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
   height: 276px;
-  width: 368px;
+  width: 100%;
 }
 
 .article-img-text {
@@ -157,6 +191,50 @@ p {
   width: 100%;
 }
 
+.latest-deals {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.latest-deals>p {
+  justify-self: flex-end;
+}
+
+.deals-header span {
+  background: url(images/icons8-expand-arrow-26.png);
+  background-image: url(images/icons8-expand-arrow-26.png);
+  height: 16px;
+  background-repeat: no-repeat;
+  width: 16px;
+  transform: rotate(-90deg);
+  background-size: cover;
+
+}
+
+.deals-header {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* .deals-header {
+  display: grid;
+  width: 100%;
+  justify-self: center;
+  grid-template-columns: 1fr 78% auto;
+  padding: 12px;
+} */
+
+.deals-header>p {
+  justify-self: end;
+}
+
+.deals-title {
+  font-size: 2rem;
+  line-height: 32px;
+}
+
 .latest-text {
   width: 244px;
   padding: 10px 14px 0 14px;
@@ -179,35 +257,22 @@ p {
   background-position-x: center;
 }
 
-.latest-deals>p {
-  justify-self: flex-end;
-}
-
-.latest-deals span {
-  background: url(images/icons8-expand-arrow-30.png);
-  background-image: url(images/icons8-expand-arrow-30.png);
-  height: 16px;
-  background-repeat: no-repeat;
-  width: 16px;
-  transform: rotate(-90deg);
-  background-size: cover;
-}
-
 .deals-section {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .deals {
   height: 294.65px;
-  width: 270px;
-  padding: 12px;
+  /* width: calc(25% - 2%); */
+  width: calc((100% / 4) - 2%);
+  padding: 1%;
 }
 
 .deals-img {
   height: 201.5px;
-  width: 270px;
-  margin-bottom: 8px;
+  width: 100%;
+  margin-bottom: 4%;
 }
 
 .img {
@@ -257,3 +322,99 @@ p {
 .deals small {
   text-decoration: line-through;
 }
+
+.social ul li {
+  background: #fff;
+  height: 25px;
+  width: 25px;
+  border: 3px solid #000;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.social ul li a {
+  position: relative;
+  top: 3px;
+}
+
+.a-img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+}
+
+.a-img2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+}
+
+.a-img3 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+}
+
+.a-img4 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+}
+
+.a-img5 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+}
+
+.a-img6 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+}
+
+.a-img7 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+}
+
+.a-img8 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+}
+
+/* @media only screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+  .wrapper-content {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+  }
+  .article-col {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 100%;
+  }
+  .article-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 75% 0 0 0;
+    width: 100%;
+  }
+  .article-title {
+    font-size: 200%;
+    line-height: 30.8px;
+    margin: 0 0 0 0;
+  }
+  .latest {
+    display: flex;
+    justify-content: center;
+    height: 96px;
+    width: 100%;
+  }
+  .latest-text {
+    width: 100%;
+    padding: 10px 14px 0 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 100%;
+  }
+  .latest-img {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/IGTV.jpg);
+    height: 96px;
+    width: 96px;
+    background-size: cover;
+    background-position-x: center;
+  }
+} */
