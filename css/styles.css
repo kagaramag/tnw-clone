@@ -941,7 +941,7 @@ p {
 }
 
 /* large screen size */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .hide-on-lg {
     display: none !important;
   }
