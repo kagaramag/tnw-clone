@@ -1,10 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/** @format */
-
 html,
 body {
   max-width: 100%;
@@ -12,8 +5,100 @@ body {
 }
 
 body {
-  background-color: #181a1b;
-  color: #fff;
+  margin: 80px 0 0 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(212, 54, 14);
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 12000;
+}
+
+nav {
+  padding: 10px 0;
+  position: relative;
+  height: 18px;
+}
+
+nav li {
+  padding: 20px 0;
+  display: inline;
+}
+
+.top-header li {
+  padding: 5px 0 0 0;
+}
+
+.list-inline {
+  display: inline;
+}
+
+.list-inline li {
+  display: inline;
+}
+
+.list-block {
+  display: block;
+}
+
+.list-block li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.image {
+  margin: 0;
+  padding: 0;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+nav li:nth-child(1) {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.tnw-brand {
+  position: relative;
+  width: 80px;
+  left: 0;
+  top: -10px;
+}
+
+.tnw-brand img {
+  width: 80px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  color: #bbb;
 }
 
 footer {
@@ -27,7 +112,7 @@ ul {
   padding: 0;
 }
 
-h2 {
+h2.hidden {
   display: none;
 }
 
@@ -94,6 +179,60 @@ small {
   width: 30%;
 }
 
+.top-header a {
+  color: #cdcdcd;
+  padding: 8px 10px;
+  font-weight: 200;
+  font-size: 13px;
+}
+
+.notification-bar a {
+  color: #111;
+}
+
+.article-box {
+  float: left;
+  margin: 0 0.5%;
+  width: 24%;
+}
+
+.article-box .image,
+.article-box .article-content {
+  float: left;
+}
+
+.article-box h3 {
+  margin: 8px 0;
+}
+
+.article-box h3 a {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #121212;
+}
+
+.article-box .timestamp {
+  color: #cdcdcd;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.social ul li {
+  background: #fff;
+  height: 25px;
+  width: 25px;
+  border: 3px solid #000;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.social ul li a {
+  position: relative;
+  top: 3px;
+}
+
 .article-img-text ul li:nth-of-type(1) {
   list-style: none;
   padding-right: 15px;
@@ -110,7 +249,7 @@ small {
 }
 
 .article-col>div:nth-of-type(3) ul>li::before {
-  content: "•";
+  content: '•';
   position: absolute;
   left: 0;
   color: #ff5233;
@@ -212,7 +351,6 @@ p {
   width: 16px;
   transform: rotate(-90deg);
   background-size: cover;
-
 }
 
 .deals-header {
@@ -221,14 +359,6 @@ p {
   flex-direction: row;
   align-items: center;
 }
-
-/* .deals-header {
-  display: grid;
-  width: 100%;
-  justify-self: center;
-  grid-template-columns: 1fr 78% auto;
-  padding: 12px;
-} */
 
 .deals-header>p {
   justify-self: end;
@@ -268,7 +398,6 @@ p {
 
 .deals {
   height: 294.65px;
-  /* width: calc(25% - 2%); */
   width: calc((100% / 4) - 2%);
   padding: 1%;
 }
@@ -327,20 +456,6 @@ p {
   text-decoration: line-through;
 }
 
-.social ul li {
-  background: #fff;
-  height: 25px;
-  width: 25px;
-  border: 3px solid #000;
-  border-radius: 100%;
-  text-align: center;
-}
-
-.social ul li a {
-  position: relative;
-  top: 3px;
-}
-
 .a-img {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
 }
@@ -373,52 +488,357 @@ p {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
 }
 
-/* @media only screen and (max-width: 768px) {
-  .wrapper {
-    padding: 0 20px;
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.background-white {
+  color: #fff;
+}
+
+.text-gray {
+  color: #dedede;
+}
+
+.background-gray {
+  color: #dedede;
+}
+
+.container {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 1152px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.row {
+  margin: 1px 0;
+  width: 100%;
+  clear: both;
+}
+
+.grab-featured-articles {
+  width: 100%;
+  padding: 30px 0 50px 0;
+  clear: both;
+}
+
+.featured-big-article {
+  width: 64%;
+  padding: 0 0.5%;
+  float: left;
+}
+
+.featured-big-article h2 {
+  font-family: Avalon, sans-serif;
+  font-size: 55px;
+  margin-top: 0;
+}
+
+.featured-big-article article {
+  width: 100%;
+  position: relative;
+}
+
+.featured-big-article .tnw-logo {
+  width: 100%;
+  max-width: 300px;
+  top: 40px;
+  left: 40px;
+  position: absolute;
+}
+
+.featured-small-articles {
+  width: 34%;
+  padding: 0 0.5%;
+  float: left;
+}
+
+.featured-small-articles h2 {
+  font-family: Avalon, sans-serif;
+  font-size: 28px;
+}
+
+.featured-small-articles article {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 3px 0;
+  position: relative;
+}
+
+.featured-article-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: #cdcdcd;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 94%;
+  height: auto;
+  padding: 100px 3% 30px 3%;
+}
+
+.art-author {
+  font-family: 'ARS Maquette', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.featured-big-article article::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(252, 58, 58, 0.93) 0%,
+      rgba(0, 0, 0, 0.79) 68%,
+      rgba(0, 0, 0, 0.72) 100%
+    );
+}
+
+.featured-small-articles article::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.75) 70%,
+      rgba(0, 0, 0, 0.98) 100%
+    );
+}
+
+.top-header {
+  background: #222;
+  padding: 5px 10px 8px 10px;
+  font-family: 'ARS Maquette', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.notification-bar {
+  padding: 7px 15px;
+  background: rgb(255, 206, 46);
+}
+
+/* small screen size */
+@media only screen and (max-width: 767px) {
+  .hide-on-sm {
+    display: none;
   }
-  .wrapper-content {
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: column;
+
+  .featured-big-article {
+    width: 98%;
   }
-  .article-col {
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
+
+  .featured-small-articles {
+    width: 98%;
+  }
+
+  .article-box {
+    width: 98%;
+  }
+
+  .article-info .image {
+    width: 25%;
+  }
+
+  .article-info .article-content {
+    width: 75%;
+  }
+
+  .fund-box {
+    width: 98%;
+  }
+
+  .main-title {
+    text-align: left;
+    display: block;
+  }
+
+  .main-title .list-inline {
+    float: left;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .main-title .list-inline li {
+    display: block;
+  }
+}
+
+/* medium screen size */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .hide-on-md {
+    display: none;
+  }
+
+  .article-box {
+    width: 32%;
+  }
+
+  .article-info .image {
     width: 100%;
   }
-  .article-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 75% 0 0 0;
+
+  .article-info .article-content {
     width: 100%;
   }
-  .article-title {
-    font-size: 200%;
-    line-height: 30.8px;
-    margin: 0 0 0 0;
+
+  .fund-box {
+    width: 98%;
   }
-  .latest {
-    display: flex;
-    justify-content: center;
-    height: 96px;
+
+  .main-title .list-inline {
+    float: left;
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+/* large screen size */
+@media only screen and (min-width: 768px) {
+  .hide-on-lg {
+    display: none !important;
+  }
+
+  .article-info .image {
     width: 100%;
   }
-  .latest-text {
+
+  .article-info .article-content {
     width: 100%;
-    padding: 10px 14px 0 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 100%;
   }
-  .latest-img {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/IGTV.jpg);
-    height: 96px;
-    width: 96px;
-    background-size: cover;
-    background-position-x: center;
+
+  .fund-box {
+    width: 24%;
   }
-} */
+}
+
+.main-title {
+  font-family: Avalon, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff4421;
+}
+
+.main-title i {
+  margin-left: 3px;
+  font-size: 20px;
+}
+
+.main-title .title-link {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.fund-box {
+  background: #fffaf9;
+  float: left;
+  margin: 0 0.5%;
+  font-family: Avalon, sans-serif;
+}
+
+.fund-box .fund-info {
+  position: relative;
+}
+
+.fund-info h3 {
+  margin: 0;
+  background: #ff4421;
+  color: #fff;
+  padding: 10px 10px 10px 70px;
+}
+
+.fund-info h4 {
+  margin: 0;
+  background: #ffece8;
+  color: #212121;
+  padding: 10px 10px 10px 70px;
+}
+
+.fund-info h4 div {
+  margin: 0;
+  font-weight: 200;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #767676;
+}
+
+.fund-box .fund-info .fund-logo {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 55px;
+  height: 55px;
+  background: #fff;
+}
+
+.fund-logo img {
+  width: 55px;
+  height: 55px;
+  background: #fff;
+}
+
+.fund-content {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 10px;
+  color: #555;
+  font-size: 12px;
+}
+
+.fund-content ul {
+  padding: 15px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ff5233;
+}
+
+.fund-content-item {
+  font-size: 14px;
+  padding: 5px 0 !important;
+}
+
+.fund-content-item i {
+  padding-right: 10px !important;
+  color: #000;
+}
