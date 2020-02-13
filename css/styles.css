@@ -154,6 +154,18 @@ small {
   background: #303336;
 }
 
+.bg-chardon {
+  background: #fff4f2;
+}
+
+.ars {
+  font-family:
+    'ARS Maquette',
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+}
+
 .w7 {
   font-weight: 700;
   font-size: 100%;
@@ -268,6 +280,8 @@ small {
 
 .article-col>div:nth-of-type(3) ul>li a {
   line-height: 19.5px;
+  color: #888;
+  font-size: 0.829rem;
 }
 
 .article-title {
@@ -285,7 +299,7 @@ small {
   transform: rotate(-90deg);
   position: relative;
   background-size: cover;
-  right: -70px;
+  right: -37%;
   bottom: 21px;
 }
 
@@ -310,8 +324,20 @@ p {
   color: #bab5ab;
 }
 
+.deals small {
+  text-decoration: line-through;
+}
+
+.article-img-text ul li>small {
+  color: #303336;
+}
+
 .article-img-text p {
   margin: 0;
+}
+
+.article-img-text>p {
+  color: #fff;
 }
 
 .article-img-text>:nth-child(1) {
@@ -386,6 +412,10 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 14px;
+}
+
+.latest-text>p {
   font-size: 100%;
 }
 
@@ -442,10 +472,6 @@ p {
   color: #aaa;
 }
 
-.copyright small {
-  font-size: 15px;
-}
-
 .copyright img {
   height: 9px;
 }
@@ -494,40 +520,36 @@ p {
   line-height: 20px;
 }
 
-.deals small {
-  text-decoration: line-through;
-}
-
 .a-img {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/03/Valve-Steam-Link-hed-368x276.jpg);
 }
 
 .a-img2 {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/MWC-2-368x276.jpg);
 }
 
 .a-img3 {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/bezos-trump-368x276.jpg);
 }
 
 .a-img4 {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Amazon-Dating-Featured-368x276.jpg);
 }
 
 .a-img5 {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/0567_BF2_5846-368x276.jpg);
 }
 
 .a-img6 {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/prpitch-368x276.png);
 }
 
 .a-img7 {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg);
 }
 
 .a-img8 {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/mike-bloomberg-memes-instagram-368x276.png);
 }
 
 .left {
@@ -787,7 +809,6 @@ p {
   padding-right: 10px !important;
   color: #000;
 }
-
 
 /* small screen size */
 @media only screen and (max-width: 767px) {

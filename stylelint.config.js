@@ -62,7 +62,7 @@ module.exports = {
         "function-comma-space-before": "never",
         "function-max-empty-lines": 0,
         "function-name-case": "lower",
-        "function-parentheses-newline-inside": "always-multi-line",
+        "function-parentheses-newline-inside": "never-multi-line",
         "function-parentheses-space-inside": "never-single-line",
         "function-whitespace-after": "always",
         "indentation": 2,
