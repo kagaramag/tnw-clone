@@ -4,7 +4,7 @@
 
 > A tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced
 
-![screenshot](images/screenshot.png)
+![screenshot](images/tnw-screenshot.png)
 
 Additional description about the project and its features.
 
