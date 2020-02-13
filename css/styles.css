@@ -375,7 +375,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 14px;
+  font-size: 100%;
 }
 
 .latest-text>:nth-child(1) {
@@ -624,12 +624,10 @@ p {
   width: 100%;
   height: 100%;
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       rgba(252, 58, 58, 0.93) 0%,
       rgba(0, 0, 0, 0.79) 68%,
-      rgba(0, 0, 0, 0.72) 100%
-    );
+      rgba(0, 0, 0, 0.72) 100%);
 }
 
 .featured-small-articles article::before {
@@ -640,12 +638,10 @@ p {
   width: 100%;
   height: 100%;
   background:
-    linear-gradient(
-      to bottom,
+    linear-gradient(to bottom,
       rgba(0, 0, 0, 0.2) 0%,
       rgba(0, 0, 0, 0.75) 70%,
-      rgba(0, 0, 0, 0.98) 100%
-    );
+      rgba(0, 0, 0, 0.98) 100%);
 }
 
 .top-header {
@@ -803,6 +799,11 @@ p {
     display: none;
   }
 
+  .article-col {
+    flex: 1;
+    width: 20%;
+  }
+
   .article-box {
     width: 32%;
   }
@@ -813,6 +814,14 @@ p {
 
   .article-info .article-content {
     width: 100%;
+  }
+
+  .latest {
+    justify-content: space-between;
+  }
+
+  .deals {
+    width: calc((100% / 3) - 2%);
   }
 
   .fund-box {
