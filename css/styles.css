@@ -316,11 +316,15 @@ small {
 .deals small,
 p {
   float: left;
-  color: #bab5ab;
+}
+
+.deals p {
+  color: #121314;
 }
 
 .deals small {
   text-decoration: line-through;
+  color: #bab5ab;
 }
 
 .article-img-text ul li>small {
@@ -519,34 +523,42 @@ p {
 
 .a-img {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/03/Valve-Steam-Link-hed-368x276.jpg);
+  background-size: cover;
 }
 
 .a-img2 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/MWC-2-368x276.jpg);
+  background-size: cover;
 }
 
 .a-img3 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/bezos-trump-368x276.jpg);
+  background-size: cover;
 }
 
 .a-img4 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Amazon-Dating-Featured-368x276.jpg);
+  background-size: cover;
 }
 
 .a-img5 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/0567_BF2_5846-368x276.jpg);
+  background-size: cover;
 }
 
 .a-img6 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/prpitch-368x276.png);
+  background-size: cover;
 }
 
 .a-img7 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg);
+  background-size: cover;
 }
 
 .a-img8 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/mike-bloomberg-memes-instagram-368x276.png);
+  background-size: cover;
 }
 
 .left {
@@ -830,7 +842,8 @@ p {
   }
 
   .article-info .article-content {
-    width: 75%;
+    width: 74%;
+    padding-left: 1%;
   }
 
   .article-col {
