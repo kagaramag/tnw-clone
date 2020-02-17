@@ -4,7 +4,7 @@
 
 > A tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced
 
-![screenshot](images/screenshot.png)
+![screenshot](images/tnw-screenshot.png)
 
 Additional description about the project and its features.
 
@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](link)
+[Live Demo Link](https://raw.githack.com/kagaramag/tnw-clone/develop/index.html)
 
 ## Authors
 
