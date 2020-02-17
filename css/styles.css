@@ -26,12 +26,16 @@ header {
   z-index: 12000;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   padding: 8px 0;
   position: relative;
   height: 14px;
   overflow: hidden;
-  background: red;
 }
 
 nav li {
@@ -39,26 +43,72 @@ nav li {
   display: inline;
 }
 
-.top-header li {
-  padding: 5px 0 0 0;
+.list-block li {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
-.list-inline {
-  display: inline;
+.top-header li {
+  padding: 5px 0 0 0;
+  line-height: 25px;
 }
 
 .list-inline li {
   display: inline;
 }
 
-.list-block {
-  display: block;
-}
-
-.list-block li {
-  display: block;
+p,
+h3,
+ul {
   margin: 0;
   padding: 0;
+}
+
+.top-header {
+  height: 25px;
+  overflow: hidden;
+  background: #222;
+  padding: 5px 0 8px 0;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+}
+
+.top-header ul {
+  width: 50%;
+  float: left;
+}
+
+nav li:nth-child(1) {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.social-section ul li {
+  background-color: #aaa;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 50px 7.5px 0;
+}
+
+.footer-links ul li {
+  color: #aaa;
+  margin: 0 0 0 7.5px;
+  font-size: 0.8rem;
+  line-height: 24px;
+}
+
+.top-header ul.right li {
+  float: right;
+}
+
+.list-inline {
+  display: inline;
+}
+
+.list-block {
+  display: block;
 }
 
 .image {
@@ -69,11 +119,6 @@ nav li {
 .image img {
   width: 100%;
   height: auto;
-}
-
-nav li:nth-child(1) {
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 .tnw-brand {
@@ -89,11 +134,6 @@ nav li:nth-child(1) {
   padding: 0 !important;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 nav a {
   font-family: Shentox, sans-serif;
   font-weight: 500;
@@ -105,13 +145,6 @@ nav a {
 
 footer {
   width: 100%;
-}
-
-p,
-h3,
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 h2.hidden {
@@ -233,24 +266,8 @@ small {
   font-size: 13px;
 }
 
-.social-section ul li {
-  background-color: #aaa;
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  text-align: center;
-  margin: 50px 7.5px 0;
-}
-
 .social-section ul li a {
   color: #fff;
-}
-
-.footer-links ul li {
-  color: #aaa;
-  margin: 0 0 0 7.5px;
-  font-size: 0.8rem;
-  line-height: 24px;
 }
 
 .article-img-text ul li:nth-of-type(1) {
@@ -719,12 +736,6 @@ p {
     rgba(0, 0, 0, 0.98) 100%);
 }
 
-.top-header {
-  background: #222;
-  padding: 5px 10px 8px 10px;
-  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
-}
-
 .notification-bar {
   padding: 7px 15px;
   background: rgb(255, 206, 46);
@@ -837,6 +848,10 @@ p {
 
 /* small screen size */
 @media screen and (max-width: 767px) {
+  body {
+    margin-top: 40px;
+  }
+
   .hide-on-sm {
     display: none;
   }
@@ -940,7 +955,7 @@ p {
   }
 
   .featured-article-info h2 {
-    font-size: 24px;
+    font-size: 1em;
   }
 }
 
@@ -993,11 +1008,11 @@ p {
 
   .main-title .title-links a {
     display: inline;
-    padding: 5px 15px;
+    padding: 5px 2px;
   }
 
   .featured-article-info h2 {
-    font-size: 28px;
+    font-size: 1em;
   }
 }
 
